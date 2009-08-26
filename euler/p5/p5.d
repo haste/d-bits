@@ -2,7 +2,7 @@ import tango.io.Stdout;
 
 bool div(int n)
 {
-	for(int i = 11; i != 20; i++)
+	for(int i = 20; i != 10; i--)
 	{
 		if(n % i != 0)
 			return false;
@@ -16,12 +16,8 @@ void main()
 	int i = 2520;
 	do
 	{
-		if(div(i))
-			break;
-
-		i += 1;
-	} while(true);
+		i+=20;
+	} while(!div(i))
 
 	Stdout.formatln("{}", i);
-	
 }
