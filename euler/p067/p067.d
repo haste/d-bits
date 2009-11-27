@@ -12,9 +12,9 @@ void main()
 	file.close;
 
 	char[][] lines = Text.splitLines(src);
-	int[100][101] data;
+	int[100][100] data;
 
-	for(int i; i < lines.length; i++)
+	for(int i; i < lines.length - 1; i++)
 	{
 		char[][] line = Text.split(lines[i], " ");
 		for(int j; j < line.length; j++)
